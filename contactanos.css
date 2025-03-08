@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(rgba(0 0 0/ .8 ), rgba(0 0 0 / .10)) ,url(imagenes/3840x2160-uhd-4k-desktop-uc88j9mya6pyagua.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    padding: 20px;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box-info {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.box-info h1 {
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.data > p{
+    font-size: 1rem;
+    color: #06fae6;
+}
+
+.data > p > i {
+    color: rgb(41, 247, 14);
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+.links > a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: #beb2b270;
+    border-radius: 10px;
+    text-align: center;
+    transition: 1s;
+}
+
+.links > a >i {
+    color: #ffffff;
+    line-height: 40px;
+    font-size: 20px;
+} 
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.input-box {
+    position: relative;
+}
+
+.btn-2{
+    display: inline-block;
+    padding:10px;
+    border-radius: 50px;
+    background-color: #0de1be6e;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100px;
+    align-items: center;
+    position:unset;
+}
+
+.btn-2:hover{
+    background: #2d5e5a;
+}
+
+.input-box > input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline: none;
+    background: rgba(225 225 225 / .1);
+    border-radius: 10px;
+    border: 3px solid transparent;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    color: #ffffff91;
+    padding: 10px;
+}
+
+.input-box > input:focus,
+.input-box > textarea:focus{
+    border-bottom: 3px solid #b2b422;
+    animation: 5s;
+}
+
+.input-box > input::placeholder,
+.input-box > textarea::placeholder{
+    color: #a3a3a3;
+}
+
+.input-box > input:focus::placeholder,
+.input-box > textarea:focus::placeholder{
+    color: transparent;
+
+}
+
+.input-box > textarea{
+
+    width: 100%;
+    height: 130px;
+    background: rgba(225 225 225 / .1);
+    border-radius: 10px;
+    border: 3px solid transparent;
+    letter-spacing: 1px;
+    transition: 3s;
+    color: #fff;
+    padding: 10px;
+}
+
+.input-box > i {
+    color: rgba(255, 245, 245, 0.575);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    transition: 3s;
+}
+
+.input-box > input:focus{
+    color: rgb(255, 255, 255);
+}
+
+form > button {
+    color: #000;
+    background: #e4e26f;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+form > button:hover, 
+.links > a:hover{
+    background-color: #9ca8ec;
+    transition: 0.5s;
+}
+
+@keyframes Shake{
+    0% , 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90%{transform: translateX(-10px);}
+    20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+@media screen and (max-width:600px){
+    .container {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .box-info {
+        gap: 15px;
+    }
+
+    .box-info > h1 {
+        font-size: 1.5rem;
+    }
+} 

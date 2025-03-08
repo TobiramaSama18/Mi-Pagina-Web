@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f0f0f;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: url(imagenes/hacker.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: #040404;
+    border-bottom: 1px solid #ffffff29;
+}
+
+.logo{
+    color: #a70a15;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #E1160D;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    display: none;
+    cursor: pointer;
+}
+
+.header-info h1{
+    color: #05f539;
+    text-transform: uppercase;
+    font-size: 70px;
+    width: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.header-info p{
+    color: #ffffff;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 10px;
+    background-color: #0d8ce15d;
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.btn-1:hover{
+    background-color: #124114;
+}
+
+.Gym{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+}
+
+.Gym-1{
+    width: 50%;
+    padding-right: 150px;
+}
+
+.Gym-1 h2{
+    font-size: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.Gym-1 p{
+    font-size: 16px;
+    color: #818181;
+    margin-bottom: 35px;
+
+}
+
+.Gym-1 span{
+    color: #a70a15;
+}
+
+.btn-2{
+    display: inline-block;
+    padding: 8px 45px;
+    border-radius: 20px;
+    background-color: #E1160D;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.btn-2:hover{
+    background-color: #a70a15;
+
+}
+
+.img-1, .img-2{
+    width: 260px;
+    margin-right: 10px;
+    height: 200px;   
+}
+
+.footer{
+    border-top: 1px solid #ffffff29;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #040404;
+}
+ 
+
+.footer h3{
+    color: #a70a15;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.links ul{
+    display: flex;
+}
+
+.links ul li {
+    margin-right: 35px;
+}
+
+.links ul li a{
+    color: #818181;
+}
+
+@media(max-width:991) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #05f539;
+    }
+}
