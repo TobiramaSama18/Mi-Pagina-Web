@@ -23,9 +23,13 @@ if (!isset($_SESSION['usuario'])) {
 </head>
 <body>
 
-    <h1>Mis Rutinas</h1>
-    <p>Aquí puedes ver tus rutinas personalizadas.</p>
-    <a href="php/cerrar_sesion.php">Cerrar Sesión</a>
+    <header>
+        <div>
+            <h1>Mis Rutinas</h1>
+            <p>Aquí puedes ver tus rutinas personalizadas.</p>
+            <a href="php/cerrar_sesion.php">Cerrar Sesión</a>
+        </div>
+    </header>
 
 </body>
 </html>
